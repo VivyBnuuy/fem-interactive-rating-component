@@ -3,10 +3,19 @@
 @use "../global/typography" as fonts;
 
 :root {
-    font-size: util.rem(16);
+    font-size: fonts.$desktop-m;
+    font-family: fonts.$overpass;
+    color: var(--white);
 }
 
 body {
     margin: 0;
-    background-color: var(--gray);
+    background-color: var(--very-dark-blue);
+}
+
+main {
+    display: grid;
+    grid-template: 1fr / 1fr;
+
+    height: 100vh;
 }

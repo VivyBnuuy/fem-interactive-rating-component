@@ -1,0 +1,16 @@
+@use "../util/functions" as util;
+
+$overpass: 'Overpass', sans-serif;
+
+// Font sizes
+$desktop-h1: util.rem(28);
+$desktop-m: util.rem(16);
+$desktop-s: util.rem(15);
+
+$mobile-h1: util.rem(24);
+$mobile-m: util.rem(14);
+
+// Font weights
+
+$medium: 400;
+$bold: 700;

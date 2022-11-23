@@ -1,0 +1,21 @@
+@use "../util/functions" as util;
+
+.review {
+    &-feedback {
+        &__list {
+            &-star:hover {
+                background-color: var(--orange);
+
+                cursor: pointer;
+            }
+        }
+
+        &__button:hover {
+            background-color: var(--white);
+
+            color: var(--orange);
+
+            cursor: pointer;
+        }
+    }
+}

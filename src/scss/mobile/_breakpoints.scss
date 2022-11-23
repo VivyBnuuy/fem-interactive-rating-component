@@ -1,0 +1,38 @@
+@use "../util/functions" as util;
+@use "../global/typography" as fonts;
+
+@media screen and (max-width: 450px) {
+    .review {
+        width: 70vw;
+
+        &-star {
+            width: util.rem(16);
+        }
+        
+        &-feedback {
+            &__star {
+                width: util.rem(39);
+                height: util.rem(39);
+            }
+
+            &__header {
+                font-size: fonts.$mobile-h1;
+            }
+
+            &__paragraph {
+                font-size: fonts.$mobile-m;
+            }
+
+            &__button {
+                font-size: fonts.$mobile-m;
+            }
+
+            &__list {
+                &-star {
+                    width: util.rem(42);
+                    height: util.rem(42);
+                }
+            }
+        }
+    }
+}

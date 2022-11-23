@@ -6,6 +6,9 @@
     <meta name="description" content="Frontend Mentor Challenge - Interactive Rating Component. Made with HTML5, Sass/SCSS, and JavaScript.">
 
     <link rel="icon" href="images/favicon-32x32.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap" rel="stylesheet"> 
     <link rel="stylesheet" href="dist/style.css">
 
     <title>Frontend Mentor Challenge - Interactive Rating Component</title>
@@ -16,7 +19,7 @@
         <!-- Initial layout of the site -->
         <div class="review-feedback">
           <div class="review-feedback__star">
-            <img src="images/icon-star.svg" alt="An orange icon of a star.">
+            <img class="review-star" src="images/icon-star.svg" alt="An orange icon of a star.">
           </div>
 
           <h1 class="review-feedback__header">How did we do?</h1>
@@ -24,11 +27,11 @@
           <p class="review-feedback__paragraph">Please let us know how we did with your support request. All feedback is appreciated to help us improve our offering!</p>
 
           <ul class="review-feedback__list">
-            <li class="review-feedback__list-star"></li>
-            <li class="review-feedback__list-star"></li>
-            <li class="review-feedback__list-star"></li>
-            <li class="review-feedback__list-star"></li>
-            <li class="review-feedback__list-star"></li>
+            <li class="review-feedback__list-star"><svg class="review-star" width="100%" height="100%" viewBox="0 0 562 528" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;"><g><g><path d="M300.145,28.713l61.42,124.413c3.456,7.038 10.185,11.914 17.901,13.025l137.346,19.969c11.635,1.729 20.37,11.821 20.37,23.581c0,6.419 -2.593,12.561 -7.191,17.037l-99.383,96.852c-5.617,5.463 -8.179,13.364 -6.852,21.08l23.457,136.759c0.216,1.327 0.339,2.655 0.339,4.013c0,13.055 -10.771,23.827 -23.827,23.827c-3.858,-0 -7.654,-0.957 -11.08,-2.747l-122.84,-64.568c-6.944,-3.642 -15.216,-3.642 -22.16,-0l-122.84,64.568c-3.395,1.79 -7.191,2.716 -11.049,2.716c-13.056,-0 -23.827,-10.772 -23.827,-23.827c-0,-1.327 0.123,-2.655 0.339,-3.982l23.457,-136.759c1.327,-7.716 -1.235,-15.617 -6.852,-21.08l-99.383,-96.852c-4.598,-4.476 -7.16,-10.618 -7.16,-17.037c-0,-11.791 8.704,-21.883 20.37,-23.581l137.315,-19.969c7.747,-1.142 14.445,-6.018 17.901,-13.025l61.42,-124.413c4.013,-8.117 12.346,-13.272 21.42,-13.272c9.043,0 17.376,5.155 21.389,13.272Z" style="fill:currentcolor;fill-opacity:0;fill-rule:nonzero;stroke:currentcolor;stroke-width:40px;"/></g></g><title>A star icon.</title></svg></li>
+            <li class="review-feedback__list-star"><svg class="review-star" width="100%" height="100%" viewBox="0 0 562 528" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;"><g><g><path d="M300.145,28.713l61.42,124.413c3.456,7.038 10.185,11.914 17.901,13.025l137.346,19.969c11.635,1.729 20.37,11.821 20.37,23.581c0,6.419 -2.593,12.561 -7.191,17.037l-99.383,96.852c-5.617,5.463 -8.179,13.364 -6.852,21.08l23.457,136.759c0.216,1.327 0.339,2.655 0.339,4.013c0,13.055 -10.771,23.827 -23.827,23.827c-3.858,-0 -7.654,-0.957 -11.08,-2.747l-122.84,-64.568c-6.944,-3.642 -15.216,-3.642 -22.16,-0l-122.84,64.568c-3.395,1.79 -7.191,2.716 -11.049,2.716c-13.056,-0 -23.827,-10.772 -23.827,-23.827c-0,-1.327 0.123,-2.655 0.339,-3.982l23.457,-136.759c1.327,-7.716 -1.235,-15.617 -6.852,-21.08l-99.383,-96.852c-4.598,-4.476 -7.16,-10.618 -7.16,-17.037c-0,-11.791 8.704,-21.883 20.37,-23.581l137.315,-19.969c7.747,-1.142 14.445,-6.018 17.901,-13.025l61.42,-124.413c4.013,-8.117 12.346,-13.272 21.42,-13.272c9.043,0 17.376,5.155 21.389,13.272Z" style="fill:currentcolor;fill-opacity:0;fill-rule:nonzero;stroke:currentcolor;stroke-width:40px;"/></g></g><title>A star icon.</title></svg></li>
+            <li class="review-feedback__list-star"><svg class="review-star" width="100%" height="100%" viewBox="0 0 562 528" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;"><g><g><path d="M300.145,28.713l61.42,124.413c3.456,7.038 10.185,11.914 17.901,13.025l137.346,19.969c11.635,1.729 20.37,11.821 20.37,23.581c0,6.419 -2.593,12.561 -7.191,17.037l-99.383,96.852c-5.617,5.463 -8.179,13.364 -6.852,21.08l23.457,136.759c0.216,1.327 0.339,2.655 0.339,4.013c0,13.055 -10.771,23.827 -23.827,23.827c-3.858,-0 -7.654,-0.957 -11.08,-2.747l-122.84,-64.568c-6.944,-3.642 -15.216,-3.642 -22.16,-0l-122.84,64.568c-3.395,1.79 -7.191,2.716 -11.049,2.716c-13.056,-0 -23.827,-10.772 -23.827,-23.827c-0,-1.327 0.123,-2.655 0.339,-3.982l23.457,-136.759c1.327,-7.716 -1.235,-15.617 -6.852,-21.08l-99.383,-96.852c-4.598,-4.476 -7.16,-10.618 -7.16,-17.037c-0,-11.791 8.704,-21.883 20.37,-23.581l137.315,-19.969c7.747,-1.142 14.445,-6.018 17.901,-13.025l61.42,-124.413c4.013,-8.117 12.346,-13.272 21.42,-13.272c9.043,0 17.376,5.155 21.389,13.272Z" style="fill:currentcolor;fill-opacity:0;fill-rule:nonzero;stroke:currentcolor;stroke-width:40px;"/></g></g><title>A star icon.</title></svg></li>
+            <li class="review-feedback__list-star"><svg class="review-star" width="100%" height="100%" viewBox="0 0 562 528" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;"><g><g><path d="M300.145,28.713l61.42,124.413c3.456,7.038 10.185,11.914 17.901,13.025l137.346,19.969c11.635,1.729 20.37,11.821 20.37,23.581c0,6.419 -2.593,12.561 -7.191,17.037l-99.383,96.852c-5.617,5.463 -8.179,13.364 -6.852,21.08l23.457,136.759c0.216,1.327 0.339,2.655 0.339,4.013c0,13.055 -10.771,23.827 -23.827,23.827c-3.858,-0 -7.654,-0.957 -11.08,-2.747l-122.84,-64.568c-6.944,-3.642 -15.216,-3.642 -22.16,-0l-122.84,64.568c-3.395,1.79 -7.191,2.716 -11.049,2.716c-13.056,-0 -23.827,-10.772 -23.827,-23.827c-0,-1.327 0.123,-2.655 0.339,-3.982l23.457,-136.759c1.327,-7.716 -1.235,-15.617 -6.852,-21.08l-99.383,-96.852c-4.598,-4.476 -7.16,-10.618 -7.16,-17.037c-0,-11.791 8.704,-21.883 20.37,-23.581l137.315,-19.969c7.747,-1.142 14.445,-6.018 17.901,-13.025l61.42,-124.413c4.013,-8.117 12.346,-13.272 21.42,-13.272c9.043,0 17.376,5.155 21.389,13.272Z" style="fill:currentcolor;fill-opacity:0;fill-rule:nonzero;stroke:currentcolor;stroke-width:40px;"/></g></g><title>A star icon.</title></svg></li>
+            <li class="review-feedback__list-star"><svg class="review-star" width="100%" height="100%" viewBox="0 0 562 528" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;"><g><g><path d="M300.145,28.713l61.42,124.413c3.456,7.038 10.185,11.914 17.901,13.025l137.346,19.969c11.635,1.729 20.37,11.821 20.37,23.581c0,6.419 -2.593,12.561 -7.191,17.037l-99.383,96.852c-5.617,5.463 -8.179,13.364 -6.852,21.08l23.457,136.759c0.216,1.327 0.339,2.655 0.339,4.013c0,13.055 -10.771,23.827 -23.827,23.827c-3.858,-0 -7.654,-0.957 -11.08,-2.747l-122.84,-64.568c-6.944,-3.642 -15.216,-3.642 -22.16,-0l-122.84,64.568c-3.395,1.79 -7.191,2.716 -11.049,2.716c-13.056,-0 -23.827,-10.772 -23.827,-23.827c-0,-1.327 0.123,-2.655 0.339,-3.982l23.457,-136.759c1.327,-7.716 -1.235,-15.617 -6.852,-21.08l-99.383,-96.852c-4.598,-4.476 -7.16,-10.618 -7.16,-17.037c-0,-11.791 8.704,-21.883 20.37,-23.581l137.315,-19.969c7.747,-1.142 14.445,-6.018 17.901,-13.025l61.42,-124.413c4.013,-8.117 12.346,-13.272 21.42,-13.272c9.043,0 17.376,5.155 21.389,13.272Z" style="fill:currentcolor;fill-opacity:0;fill-rule:nonzero;stroke:currentcolor;stroke-width:40px;"/></g></g><title>A star icon.</title></svg></li>
           </ul>
 
           <button type="submit" class="review-feedback__button">Submit</button>
@@ -36,9 +39,9 @@
 
         <!-- Layout after feedback has been submitted -->
         <div class="review-thankyou">
-          <img src="images/illustration-thank-you.svg" alt="A receipt printer with a credit card.">
+          <img class="review-thankyou__img" src="images/illustration-thank-you.svg" alt="A receipt printer with a credit card.">
 
-          <span class="review-thankyou__selection">You selected X out of 5</span>
+          <p class="review-thankyou__selection">You selected X out of 5</p>
 
           <h1 class="review-thankyou__header">Thank you!</h1>
 
@@ -49,6 +52,6 @@
 
       </section>
     </main>
-    <script src="js/main.js"></script>
+    <script src="src/js/main.js"></script>
   </body>
 </html>

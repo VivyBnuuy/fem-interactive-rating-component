@@ -1,0 +1,146 @@
+@use "../util/functions" as util;
+@use "../global/typography" as fonts;
+
+.review {
+    align-self: center;
+    justify-self: center;
+
+    background-image: var(--background);
+
+    border-radius: util.rem(30);
+
+    padding: util.rem(32);
+
+    &-star {
+        width: util.rem(18);
+    }
+    
+    // Feedback part of the page
+    &-feedback {
+        display: block;
+
+        &__star {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            background-color: var(--dark-blue);
+
+            border-radius: util.rem(32);
+
+            width: util.rem(48);
+            height: util.rem(48);
+        }
+
+        &__header {
+            font-size: fonts.$desktop-h1;
+
+            margin: util.rem(24) 0;
+        }
+
+        &__paragraph {
+            font-size: fonts.$desktop-s;
+            color: var(--light-gray);
+
+            max-width: 35ch;
+
+            line-height: util.rem(24);
+
+            margin: util.rem(24) 0;
+        }
+
+        &__list {
+            display: flex;
+            justify-content: space-between;
+
+            padding: 0;
+
+            list-style: none;
+
+            font-size: fonts.$desktop-m;
+            color: var(--light-gray);
+
+            &-star {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                background-color: var(--dark-blue);
+
+                color: var(--white);
+                
+                border-radius: util.rem(32);
+
+                width: util.rem(51);
+                height: util.rem(51);
+
+                transition: background-color 200ms;
+            }
+        }
+
+        &__button {
+            background-color: var(--orange);
+
+            font-family: fonts.$overpass;
+            font-size: fonts.$desktop-s;
+            font-weight: fonts.$bold;
+            color: var(--white);
+            text-transform: uppercase;
+            letter-spacing: util.rem(2);
+
+            border-style: none;
+            border-radius: util.rem(32);
+
+            width: 100%;
+
+            padding: util.rem(16) 0;
+
+            margin: util.rem(12) 0 0 0;
+
+            transition: color 200ms, background-color 200ms;
+        }
+    }
+
+
+    // Thank you part of the page - Hidden until feedback is submitted
+    &-thankyou {
+        display: none;
+        flex-direction: column;
+
+        align-items: center;
+
+        text-align: center;
+
+        &__img {
+            margin: util.rem(6) 0 util.rem(16);
+        }
+
+        &__selection {
+            background-color: var(--dark-blue);
+
+            font-size: fonts.$desktop-s;
+            color: var(--orange);
+
+            max-width: fit-content;
+            
+            border-radius: util.rem(32);
+
+            padding: util.rem(8) util.rem(16);
+        }
+
+        &__header {
+            font-size: fonts.$desktop-h1;
+
+            margin: util.rem(16) 0 util.rem(12);
+        }
+
+        &__paragraph {
+            font-size: fonts.$desktop-s;
+            color: var(--light-gray);
+
+            max-width: 35ch;
+
+            padding: 0 util.rem(6.91);
+        }
+    }
+}
