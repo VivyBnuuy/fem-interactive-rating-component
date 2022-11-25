@@ -113,6 +113,8 @@
             margin-bottom: 0;
 
             &-img {
+                align-self: center;
+
                 margin-right: util.rem(8);
 
                 width: util.rem(24);
@@ -131,7 +133,7 @@
         text-align: center;
 
         &__img {
-            margin: util.rem(6) 0 util.rem(16);
+            margin: util.rem(17) 0;
         }
 
         &__selection {
@@ -158,8 +160,6 @@
             color: var(--light-gray);
 
             max-width: 35ch;
-
-            padding: 0 util.rem(6.91);
         }
     }
 }
