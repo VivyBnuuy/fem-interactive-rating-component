@@ -81,8 +81,6 @@ function starContainerClick(e) {
             canSubmit = true;
         }
     }
-
-    console.log(rating);
 }
 
 // Submit button - Display error message if no review has been entered
