@@ -47,6 +47,7 @@ let rating = 1;
 
 function starContainerClick(e) {
     let tgt = e.currentTarget;
+    rating = 1;
 
     errorElement[0].style.display = "none";
 
@@ -80,6 +81,8 @@ function starContainerClick(e) {
             canSubmit = true;
         }
     }
+
+    console.log(rating);
 }
 
 // Submit button - Display error message if no review has been entered
