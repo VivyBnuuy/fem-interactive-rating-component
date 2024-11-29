@@ -17,6 +17,6 @@ For this challenge, I used the following:
 - This was my first time deviating from a given design - I thought having the stars to select made more sense and was more intuitive for a user. We're all familiar with leaving ratings out of 5 stars, while 1 to 5 are not as common.
 
 # The End
-Thanks for checking out my solution to this challenge! If you have any feedback, I would love if you reached out to me or left a comment on my <a href="https://www.frontendmentor.io/solutions/interactive-rating-component-html-bem-sassscss-and-javascript-x21b8Ttq8s" target="_blank">solution page</a> - I'm always looking to improve!
+Thanks for checking out my solution to this challenge! If you have any feedback, I would love if you reached out to me or opened an issue if there's anything that needs fixing; I'm always looking to improve!
 
 Happy coding!
